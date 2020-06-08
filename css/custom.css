@@ -1,0 +1,9 @@
+/* You can customize theme styles here */
+#header {
+  background-color: #fff;
+}
+
+.clients__item {
+  max-width: 128px;
+  height: 30px;
+}

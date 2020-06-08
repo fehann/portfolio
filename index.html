@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.71.1" />
+
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=GTM-000000' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-000000');
+</script>
+
+<title></title>
+<style>
+     
+    .rad-fade-in {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in.rad-animate {
+        animation-name: rad-fade-in;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-in-long {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-long-fallback;
+        animation-duration: 8s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-animate {
+        animation-name: rad-fade-in-long;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-down {
+        will-change: opacity, transform;
+        animation-name: rad-fade-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform: translateY(-30px);
+    }
+
+    @keyframes rad-fade-down-fallback {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        75% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fonts-loaded .rad-fade-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .fonts-loaded .rad-fade-down.rad-animate {
+        animation-name: rad-fade-down;
+        animation-duration: 1.1s;
+    }
+
+    @keyframes rad-fade-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+     
+    .rad-scale-down {
+        will-change: opacity, transform;
+        animation-name: rad-scale-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform-origin: 50% 0;
+    }
+
+    @keyframes rad-scale-down-fallback {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        75% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+    .fonts-loaded .rad-scale-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+
+    .fonts-loaded .rad-scale-down.rad-animate {
+        animation-name: rad-scale-down;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-scale-down {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+</style>
+
+
+<link rel="stylesheet" href="https://fehann.github.io/portfolio/css/main.css"/>
+
+<link rel="stylesheet" href="https://fehann.github.io/portfolio/css/rad-icons.css"/>
+
+<link rel="stylesheet" href="https://fehann.github.io/portfolio/css/custom.css"/>
+
+<link rel="stylesheet" href="/css/custom.css"/>
+
+</head>
+
+<body>
+
+	<header class="header fixed-top rad-animation-group" id="header">
+  <div class="container rad-fade-in">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <a class="navbar-brand" href="https://fehann.github.io/portfolio/">
+        <span>Fernando</span>
+        <span>Hannaka</span>
+        
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent, #header"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://fehann.github.io/portfolio/">HOME</a>
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#about"
+              >ABOUT</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#portfolio"
+              >PORTFOLIO</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#contact"
+              >CONTACT</a
+            >
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+	
+	
+<section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
+  <div class="rad-showcase__bg">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="https://fehann.github.io/portfolio/img/showcase/showcaseA.png"
+      data-srcset="https://fehann.github.io/portfolio/img/showcase/showcaseA.png 1x, https://fehann.github.io/portfolio/img/showcase/showcase@2x.png 2x"
+      alt="Showcase keyboard and mouse image"
+    />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+        <h1 class="display-1">
+          Hello, I’m Fernando.
+          <br />
+          <span
+            >Analytics Translator</span
+          >
+        </h1>
+        <p class="lead">
+          Systems and Information Engineer, solid management experience. Innovation culture enthusiast, digital transformation through empathetic leadership and data literacy.
+        </p>
+        <a
+          href="https://radity.com/en/contact/"
+          class="btn btn-primary"
+        >
+          <i class="icon-mail-fill"></i>
+          Contact
+        </a>
+      </div>
+    </div>
+    <div class="row platform-links">
+      <div class="col-12">
+        
+        <a href="https://www.linkedin.com/in/fernandohannaka/" target="_blank"
+          ><i class="icon-linkedin-line"></i
+        ></a>
+        
+        <a href="https://github.com/fehann/" target="_blank"
+          ><i class="icon-github-line"></i
+        ></a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="rad-showcase__bg rad-showcase__bg--mobile">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="https://fehann.github.io/portfolio/img/showcase/showcase-mobile.jpg"
+      alt="Showcase keyboard and mouse image"
+    />
+  </div>
+</section>
+
+
+	
+	
+<section class="section rad-animation-group pb-0" id="about">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+      <div class="about__profile-picture col-12 col-md-6">
+        <img
+          class="lozad img-responsive image-left-overflow"
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://fehann.github.io/portfolio/img/who-am-i/Profile.jpeg"
+          data-srcset="https://fehann.github.io/portfolio/img/who-am-i/Profile.jpeg 1x, https://fehann.github.io/portfolio/img/who-am-i/user-picture@2x.png 2x"
+          alt="Profile Picture"
+        />
+      </div>
+      <div class="col-12 col-md-6 my-auto my-auto">
+        <h2>Who am I?</h2>
+        <p class="lead">
+          <p class="lead"> I am a Brazilian, as most a soccer fan, who loves being outdoors and appreciating nature. I have a multicultural background, although I was born in São Paulo, I went to elementary school in Uruguay, middle school in Suriname and Brazil, high school in Japan and college in the US. I enjoy collaborating, learning with others and leading others in an empathetic style. </p> <p class="lead"> My area of focus lies in bringing solutions to organizations through analytical practices by promoting a data driven culture and streamlining value based innovation. I have hands-on experience with applying data analytics in orthodox teams, adding value to the business processes and transforming team building. </p>
+        </p>
+        <a
+          href="https://www.linkedin.com/in/fernandohannaka/"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          <i class="icon-smile-fill"></i>
+          About Me
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	
+	
+<section class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row rad-fade-down">
+            <div class="col-12">
+                <h2>Education</h2>
+                <div class="row pt-2 pt-md-4">
+                    
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="education">
+                            <div class="education__date">1999-2003</div>
+                            <div class="education__title">University of Virginia</div>
+                            <div class="education__degree">
+                                Bachelor of Science (BS), Systems and Information Engineering
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="education">
+                            <div class="education__date">2009-2012</div>
+                            <div class="education__title">Fundação Getúlio Vargas</div>
+                            <div class="education__degree">
+                                Master in Business Administration (MBA) in Project Management
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+<section id="experience" class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row flex-column-reverse flex-md-row rad-fade-down">
+            <div class="col-12 col-sm-6 mt-5 mt-sm-0">
+                
+                <div class="experience">
+                    <div class="experience__date">2020</div>
+                    <div class="experience__title">Data Scientist in R Career Track</div>
+                    <div class="experience__company">Datacamp</div>
+                </div>
+                
+                <div class="experience">
+                    <div class="experience__date">2020</div>
+                    <div class="experience__title">Data Literacy Certificate</div>
+                    <div class="experience__company">Qlik</div>
+                </div>
+                
+                <div class="experience">
+                    <div class="experience__date">2020</div>
+                    <div class="experience__title">Microsoft Power BI for Data Science</div>
+                    <div class="experience__company">Data Science Academy</div>
+                </div>
+                
+                <div class="experience">
+                    <div class="experience__date">2017</div>
+                    <div class="experience__title">Data Analysis for Social Scientists</div>
+                    <div class="experience__company">MITx</div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-sm-6">
+                <h2>Certifications</h2>
+                <p class="lead">
+                    As an engineer with analytical experience, seeing changes in the nature of work and a world with high volatility and uncertainty, I decided to expand my horizons and follow a data science learning path. My focus has been in both the technical part with statistical analysis, visualization and programming, as well as non-technical aspects that are key to solving problems, including design thinking, storytelling, agile management and lean mindset.
+                </p>
+                <a href="https://www.linkedin.com/in/fernandohannaka/" class="btn btn-primary"
+                   target="_blank">
+                    <i class="icon-linkedin-fill"></i>
+                    Linkedin
+                    <i class="icon-arrow-right"></i></a>
+                <a href="https://fehann.github.io/portfolio/" class="btn btn-frameless"
+                   target="_blank">
+                    <i class=""></i>
+                    
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+<section class="section rad-animation-group section--border-bottom">
+    <div class="container">
+        <h2 class="rad-fade-down">Tools (experience)</h2>
+        <div class="row row--padded mb-0 rad-fade-down">
+            
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                
+                <p>
+                    Applied the use of R and Python to data manipulation, exploratory data analysis and build predictive models. Data manipulation included manipulation of tidy data, as well as those not presented in an unclear format, like spreadsheets that were not in the standard table form and formatted in an untidy structure. Created data visualization for conducting exploratory data analysis and for presenting personalized plots for data storytelling. Conducted predictive analytics by building supervised learning regression and classification models, always keeping in mind the need for model explainability and assessment.
+                </p>
+                <div class="testimonial__author">
+                    <img class="lozad testimonial__author-image"
+                         src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                         data-src="https://fehann.github.io/portfolio/img/testimonials/datascience.png"
+                         data-srcset="https://fehann.github.io/portfolio/img/testimonials/datascience.png 1x, https://fehann.github.io/portfolio/img/testimonials/datascience.png 2x"
+                         alt="R and Python"/>
+                    <div class="testimonial__author-info">
+                        <h4>R and Python</h4>
+                        <span>Data science</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                
+                <p>
+                    Used Power BI as a data warehouse and data modeling platform to create actionable dashboards. Created extraction, transformation and loading (ETL) process through query editor and M-language functionalities. Modeled relationships between data sources, focusing on Star Schema structure to enable integrated data visualizations. Customized new variables and created complex measures using DAX. Applied design thinking principles in building solution driven dashboards by the use of appropriate graph types, intuitive color schemes, optimal layout distribution and proper interactions.
+                </p>
+                <div class="testimonial__author">
+                    <img class="lozad testimonial__author-image"
+                         src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                         data-src="https://fehann.github.io/portfolio/img/testimonials/dashboard.png"
+                         data-srcset="https://fehann.github.io/portfolio/img/testimonials/dashboard.png 1x, https://fehann.github.io/portfolio/img/testimonials/dashboard.png 2x"
+                         alt="Power BI"/>
+                    <div class="testimonial__author-info">
+                        <h4>Power BI</h4>
+                        <span>Data integration and dashboard</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                
+                <p>
+                    Integrated Power Platform applications to create automated business processes solutions. Used Power Automate integration capability to create workflows by leveraging different applications through data connectors with Teams, Forms, Excel Online, to name a few. Also took advantage of Sharepoint’s powerful communication features to enable information sharing across the organizations. Effectively used Sharepoint pages, document libraries, lists and embedding options with Power BI and Stream, as well as extensively used Teams, as a team building and project management tool.
+                </p>
+                <div class="testimonial__author">
+                    <img class="lozad testimonial__author-image"
+                         src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                         data-src="https://fehann.github.io/portfolio/img/testimonials/flow.png"
+                         data-srcset="https://fehann.github.io/portfolio/img/testimonials/flow.png 1x, https://fehann.github.io/portfolio/img/testimonials/flow.png 2x"
+                         alt="Power Platform"/>
+                    <div class="testimonial__author-info">
+                        <h4>Power Platform</h4>
+                        <span>Workflow</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+	
+	
+<section id="portfolio" class="section section--border-bottom">
+  <div class="container">
+    <h2 class=" rad-animation-group rad-fade-down">
+      Portfolio
+    </h2>
+    <div class="row row--padded rad-animation-group rad-fade-down">
+      <div class="col-12">
+        <div class="clients">
+          
+          <div class="clients__item">
+            <a href="https://github.com/">
+              <img
+                class="lozad img-responsive"
+                src="/img/clients/Githubgray.png"
+                alt="Github"
+              />
+            </a>
+          </div>
+          
+          <div class="clients__item">
+            <a href="https://rstudio.cloud/">
+              <img
+                class="lozad img-responsive"
+                src="/img/clients/RStudio-Logo-Gray.png"
+                alt="RStudio"
+              />
+            </a>
+          </div>
+          
+          <div class="clients__item">
+            <a href=" https://www.drivendata.org/">
+              <img
+                class="lozad img-responsive"
+                src="/img/clients/DrivenData.jfif"
+                alt="DrivenData"
+              />
+            </a>
+          </div>
+          
+          <div class="clients__item">
+            <a href="https://kaggle.com">
+              <img
+                class="lozad img-responsive"
+                src="/img/clients/Kagglegray.png"
+                alt="kaggle"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+    >
+      
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Deaths by Brazilian States due to COVID-19</h3>
+        <p class="lead">
+          Created and maintained visualization to show the speed at which deaths related to COVID-19 were happening by Brazilian states. Plots both Python and R, with interactivity to allow in depth analysis.
+        </p>
+        <a href="https://fehann.github.io/COVID-19-Brazil/" class="btn btn-primary"
+          >Visualization<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-left-backward'
+          src="/img/works/visualizationcombo.jpg"
+          alt="Deaths by Brazilian States due to COVID-19"
+        />
+      </div>
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down "
+    >
+      
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-right-backward'
+          src="/img/works/diagnosisCOVID19.png"
+          alt="Diagnosis of COVID-19"
+        />
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Diagnosis of COVID-19</h3>
+        <p class="lead">
+          Application of hierarchical, k-means and principal component analysis (PCA) clustering methods to attempt to distinguish groups that could be used predict diagnosis of COVID-19 cases based on clinical test results.
+        </p>
+        <a href="https://www.kaggle.com/fehann/predicting-clustering-methods" class="btn btn-primary"
+          >Prediction model<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+    >
+      
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Predicting Disease Spread</h3>
+        <p class="lead">
+          Predicted number of total dengue cases in two locations after training the model with different regression models, including linear regression, random forest, support vector machine (SVM), k-nearest neighbor and gradient boosting.
+        </p>
+        <a href="https://fehann.github.io/DengAI/" class="btn btn-primary"
+          >Prediction model<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-left-forward'
+          src="/img/works/drivendata.jpg"
+          alt="Predicting Disease Spread"
+        />
+      </div>
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down "
+    >
+      
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-right-forward'
+          src="/img/works/H1Bplot.png"
+          alt="H1B Visa Issuances Analysis"
+        />
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>H1B Visa Issuances Analysis</h3>
+        <p class="lead">
+          First exploratory data analysis project with the aim to compare H1B visa issuances by the United States between 2015 to 2018. Applied R language programing and data visualization skills.
+        </p>
+        <a href="https://www.kaggle.com/fehann/h1b-analysis-2015-2018?scriptVersionId=23783142" class="btn btn-primary"
+          >Data analysis<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+    >
+      
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Don&#39;t overfit it!</h3>
+        <p class="lead">
+          Built predictions based on various classification models. In order to avoid overfitting the model, variable importance was analyzed to determine the variables to keep based on the performance of the evaluation metric.
+        </p>
+        <a href="https://www.kaggle.com/fehann/don-t-overfit-when-less-is-more-but-not-over" class="btn btn-primary"
+          >Prediction model<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-left-backward'
+          src="/img/works/dontoverfit.png"
+          alt="Don&#39;t overfit it!"
+        />
+      </div>
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down "
+    >
+      
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-right-backward'
+          src="/img/works/creditcard.png"
+          alt="Credit card fraud"
+        />
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Credit card fraud</h3>
+        <p class="lead">
+          Application of logistic regression models to predict fraudulent transactions. Due to the greater concern with false negatives cases in fraud analytics, sensitivity was chosen as the appropriate evaluation metric.
+        </p>
+        <a href="https://www.kaggle.com/fehann/in-the-end-sensitivity-is-what-really-matters" class="btn btn-primary"
+          >Prediction model<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      
+    </div>
+    
+  </div>
+</section>
+
+
+	
+	
+<section id="contact" class="section section--contact pt-0">
+    <div class="container">
+        <div class="contact">
+            <h2>Contact</h2>
+            <div class="row pt-2">
+                <div class="col-12 col-lg-7">
+                    <form id="email__form" action="mailto:fhannaka@yahoo.com" method="POST">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="subject" id="full_name"
+                                       placeholder="Subject"/>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="email" id="email"
+                                       placeholder="Email Address"/>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <textarea name="message" id="message"
+                                          cols="30" rows="3" placeholder="Type Your Message Here"></textarea>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <button
+                                 type="submit" class="btn btn-primary">
+                                    <i class="icon-mail-fill"></i>
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-5 contact__info">
+                    <h4></h4>
+                    <span></span>
+                    <h4>Email</h4>
+                    <span><a href="mailto:fhannaka@yahoo.com">fhannaka@yahoo.com</a></span>
+                    <h4>LinkedIn</h4>
+                    <span><a href="https://www.linkedin.com/in/fernandohannaka/">fernandohannaka</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+
+	
+
+	<footer class="footer">
+  <div class="container">
+    <div class="footer__left">
+      <div class="footer__copy">
+        © Raditian. All rights reserved.
+      </div>
+    </div>
+    <div class="footer__links">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="https://fehann.github.io/portfolio/">HOME</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://fehann.github.io/portfolio">ABOUT</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://fehann.github.io/portfolio">PORTFOLIO</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://fehann.github.io/portfolio">CONTACT</a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="footer__right">
+      <a href="https://radity.com/"
+        ><img
+          src="https://fehann.github.io/portfolio/img/general/design-and-code-radity.png"
+          srcset="https://fehann.github.io/portfolio/img/general/design-and-code-radity.png 1x, https://fehann.github.io/portfolio/img/general/design-and-code-radity@2x.png 2x"
+          alt="Design &amp; Code - Radity"
+      /></a>
+    </div>
+  </div>
+</footer>
+
+    <script src='https://fehann.github.io/portfolio/js/rad-animations.js'></script>
+<script src='https://fehann.github.io/portfolio/js/library/lozad.min.js'></script>
+<script>
+  window.addEventListener("load", function() {
+    var observer = window.lozad(".lozad", {
+      rootMargin: window.innerHeight / 2 + "px 0px",
+      threshold: 0.01
+    }); 
+    observer.observe();
+  });
+</script>
+<script src='https://fehann.github.io/portfolio/js/library/jquery-3.3.1.slim.min.js'></script>
+<script src='https://fehann.github.io/portfolio/js/library/bootstrap.min.js'></script>
+<script src='https://fehann.github.io/portfolio/js/sticky-header.js'></script>
+<script src='https://fehann.github.io/portfolio/js/library/smooth-scroll.polyfills.min.js'></script>
+<script src='https://fehann.github.io/portfolio/js/library/fontfaceobserver.js'></script>
+<script>
+  (function(w) {
+    
+    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+      return;
+    }
+    var fontA = new w.FontFaceObserver("Inter", {
+      weight: 300
+    });
+    var fontB = new w.FontFaceObserver("Inter", {
+      weight: 400
+    });
+    var fontC = new w.FontFaceObserver("Inter", {
+      weight: 500
+    });
+    var fontD = new w.FontFaceObserver("Inter", {
+      weight: 600
+    });
+    var fontE = new w.FontFaceObserver("Inter", {
+      weight: 700
+    });
+    var fontF = new w.FontFaceObserver("Inter", {
+      weight: 900
+    });
+    w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
+      w.document.documentElement.className += " fonts-loaded";
+    });
+  })(this);
+</script>
+<script>
+  const scroll = new SmoothScroll('a[href*="#"]');
+    $('a.nav-link').on('click', () => {
+      const navbar = $('.navbar-collapse');
+      if (navbar && navbar.hasClass('show')) {
+        $('.navbar-toggler').click();
+      }
+    })
+</script>
+
+</body>
+
+</html>
